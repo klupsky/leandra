@@ -1,3 +1,5 @@
+'use client';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import cocktail1 from '../../public/cocktail_1.svg';
 import cocktail2 from '../../public/cocktail_2.svg';
@@ -44,19 +46,17 @@ export default function InfoSection() {
                 cocktailName="Cocktail 4"
               />
             </div>
-
-            <a href="../../leandra_menu.pdf">
-              return (
-              <motion.div
-                whileHover={{
-                  y: -10,
-                  transition: {
-                    type: 'spring',
-                    stiffness: 200,
-                    bounce: 0.8,
-                  },
-                }}
-              >
+            <motion.div
+              whileHover={{
+                y: -10,
+                transition: {
+                  type: 'spring',
+                  stiffness: 200,
+                  bounce: 0.8,
+                },
+              }}
+            >
+              <a href="../../leandra_menu.pdf">
                 <div className="flex flex-col bg-blue w-full lg:hover:cursor-pointer">
                   <div className="flex bg-blue">
                     <div className="border-2 border-blue bg-white p-10 w-full flex items-center text-center justify-center">
@@ -68,8 +68,8 @@ export default function InfoSection() {
                   </div>
                   <div className="w-2 h-2 bg-green"></div>
                 </div>
-              </motion.div>
-            </a>
+              </a>
+            </motion.div>
           </div>
         </div>
       </div>
