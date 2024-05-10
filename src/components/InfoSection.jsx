@@ -11,16 +11,20 @@ export default function InfoSection() {
   return (
     <>
       <div className="flex flex-col lg:flex-row">
-        <div class="flex-1 pb-10 relative w-full lg:w-1/2 bg-white flex flex-col items-center justify-between">
-          <Image src={headline} alt="Find us in MQ Wien" className="py-10" />
+        <div class="flex-1 pb-5 lg:pb-10 relative w-full lg:w-1/2 bg-white flex flex-col items-center justify-between">
+          <Image
+            src={headline}
+            alt="Find us in MQ Wien"
+            className="py-5 lg:py-10"
+          />
           <div className="flex-1 flex justify-center items-center w-full ">
             <Image src={map} alt="Leandra Map" />
           </div>
         </div>
 
-        <div class="flex-1 p-10 relative w-full lg:w-1/2 bg-green flex flex-col items-center justify-center gap-10">
-          <div class="flex flex-col gap-10 w-fit">
-            <div class="flex w-fit items-center justify-center gap-10">
+        <div class="flex-1 p-5 lg:p-10 relative w-full lg:w-1/2 bg-green flex flex-col items-center justify-center gap-5 lg:gap-10">
+          <div class="flex flex-col gap-5 lg:gap-10 w-fit">
+            <div class="flex w-fit items-center justify-center gap-5 lg:gap-10">
               <CocktailCard
                 cocktailImage={cocktail1}
                 cocktailName="Cocktail 1"
@@ -30,7 +34,7 @@ export default function InfoSection() {
                 cocktailName="Cocktail 2"
               />
             </div>
-            <div class="flex w-full items-center justify-center gap-10">
+            <div class="flex w-full items-center justify-center gap-5 lg:gap-10">
               <CocktailCard
                 cocktailImage={cocktail3}
                 cocktailName="Cocktail 3"
