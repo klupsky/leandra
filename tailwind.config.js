@@ -24,6 +24,9 @@ module.exports = {
           DEFAULT: '#d7da26',
         },
       },
+      fontFamily: {
+        lexend: ['var(--font-lexend)'],
+      },
     },
   },
   plugins: [],
