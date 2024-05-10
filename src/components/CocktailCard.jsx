@@ -1,9 +1,17 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-export default function CocktailCard({ cocktailImage, cocktailName }) {
+export default function CocktailCard({ cocktailImage, cocktailName, index }) {
   return (
     <motion.div
+      whileTap={{
+        y: -10,
+        transition: {
+          type: 'spring',
+          stiffness: 200,
+          bounce: 0.8,
+        },
+      }}
       whileHover={{
         y: -10,
         transition: {
@@ -11,6 +19,17 @@ export default function CocktailCard({ cocktailImage, cocktailName }) {
           stiffness: 200,
           bounce: 0.8,
         },
+      }}
+      index={index}
+      initial={{ opacity: 0, y: -50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -50 }}
+      viewport={{ once: true }}
+      transition={{
+        type: 'spring',
+        stiffness: 100,
+        bounce: 0.8,
+        delay: `0.${index}`,
       }}
     >
       <div className="flex flex-col bg-blue w-fit">

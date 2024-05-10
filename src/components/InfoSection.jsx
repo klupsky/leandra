@@ -14,13 +14,43 @@ export default function InfoSection() {
     <>
       <div className="flex flex-col lg:flex-row">
         <div class="flex-1 pb-5 lg:pb-10 relative w-full lg:w-1/2 bg-white flex flex-col items-center justify-between">
-          <Image
-            src={headline}
-            alt="Find us in MQ Wien"
-            className="py-5 lg:py-10"
-          />
+          <motion.div
+            whileTap={{
+              y: -10,
+              transition: {
+                type: 'spring',
+                stiffness: 200,
+                bounce: 0.8,
+              },
+            }}
+            whileHover={{
+              y: -10,
+              transition: {
+                type: 'spring',
+                stiffness: 200,
+                bounce: 0.8,
+              },
+            }}
+            index={1}
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -50 }}
+            viewport={{ once: true }}
+            transition={{
+              type: 'spring',
+              stiffness: 100,
+              bounce: 0.8,
+              delay: 0,
+            }}
+          >
+            <Image
+              src={headline}
+              alt="Find us in MQ Wien"
+              className="py-5 lg:py-10"
+            />
+          </motion.div>
           <div className="flex-1 flex justify-center items-center w-full ">
-            <Image src={map} alt="Leandra Map" />
+            <Image src={map} alt="Leandra Map" className="w-full" />
           </div>
         </div>
 
@@ -28,25 +58,37 @@ export default function InfoSection() {
           <div class="flex flex-col gap-5 lg:gap-10 w-fit">
             <div class="flex w-fit items-center justify-center gap-5 lg:gap-10">
               <CocktailCard
+                index={1}
                 cocktailImage={cocktail1}
                 cocktailName="Cocktail 1"
               />
               <CocktailCard
+                index={2}
                 cocktailImage={cocktail2}
                 cocktailName="Cocktail 2"
               />
             </div>
             <div class="flex w-full items-center justify-center gap-5 lg:gap-10">
               <CocktailCard
+                index={3}
                 cocktailImage={cocktail3}
                 cocktailName="Cocktail 3"
               />
               <CocktailCard
+                index={4}
                 cocktailImage={cocktail4}
                 cocktailName="Cocktail 4"
               />
             </div>
             <motion.div
+              whileTap={{
+                y: -10,
+                transition: {
+                  type: 'spring',
+                  stiffness: 200,
+                  bounce: 0.8,
+                },
+              }}
               whileHover={{
                 y: -10,
                 transition: {

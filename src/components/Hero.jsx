@@ -16,6 +16,14 @@ export default function Hero() {
       </div>
       <div className="relative p-5 lg:p-10 flex min-h-screen flex-col gap-y-5 items-center text-blue justify-center">
         <motion.div
+          whileTap={{
+            y: -10,
+            transition: {
+              type: 'spring',
+              stiffness: 200,
+              bounce: 0.8,
+            },
+          }}
           whileHover={{
             y: -10,
             transition: {
