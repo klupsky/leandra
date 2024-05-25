@@ -1,14 +1,14 @@
 'use client';
-import image from '../../public/leandra_2.png';
+import image from '../../public/leandra_1.png';
 import ImageComponent from './ImageComponent';
-import Map from './Map';
+import Menu from './Menu';
 
 export default function InfoSection() {
   return (
     <>
-      <div className="flex flex-col-reverse lg:flex-row">
-        <Map />
+      <div className="flex flex-col lg:flex-row">
         <ImageComponent image={image} />
+        <Menu />
       </div>
     </>
   );

@@ -5,7 +5,7 @@ import pattern from '../../public/pattern.svg';
 
 export default function Hero() {
   return (
-    <div class="h-screen w-full relative">
+    <div class="h-[calc(100vh-2.5rem)] w-full relative">
       <div className="absolute inset-0 z-0 bg-red ">
         <Image
           src={pattern}
