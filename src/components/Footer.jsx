@@ -22,9 +22,9 @@ export default function Footer() {
         <h5 className="uppercase flex flex-col text-sm tracking-[.2em]">
           imprint
         </h5>
-        <a href="mailto:info@leandrabar.com">
+        <a href="mailto:info@leandra.at">
           <p className="uppercase underline lg:hover:no-underline transition-all ease-in-out duration-300 text-[.7rem] tracking-[.2em]">
-            info@leandrabar.com
+            info@leandra.at
           </p>
         </a>
         <p className="text-[.7rem] tracking-[.2em]">
