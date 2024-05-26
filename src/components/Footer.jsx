@@ -6,7 +6,7 @@ export default function Footer() {
           Come as you are!
         </h4>
         <p className="uppercase flex flex-col text-sm tracking-[.2em]">
-          Mon-Fri: 17:00-24:00
+          Mi-Sa: 17:00-24:00
         </p>
       </div>
 
